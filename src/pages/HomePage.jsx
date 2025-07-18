@@ -1,7 +1,11 @@
+import Hero from '../components/home/Hero';
+
 const HomePage = () => {
   return (
-    <div className="h-[1000vh]">HomePage</div>
-  )
-}
+    <>
+      <Hero />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
