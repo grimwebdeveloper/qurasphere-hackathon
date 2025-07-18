@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Footer from './global/Footer';
 import Navbar from './global/Navbar';
+// import SplashCursor from './react-bits/SplashCursor';
 
 function Layout() {
   return (
@@ -8,6 +9,7 @@ function Layout() {
       <Navbar />
       <Outlet />
       <Footer />
+      {/* <SplashCursor /> */}
     </>
   );
 }

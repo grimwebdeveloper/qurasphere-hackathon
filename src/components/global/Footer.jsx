@@ -1,7 +1,7 @@
 function Footer() {
-  return (
-    <div className="h-screen">Footer</div>
-  )
+  return <footer>
+    
+  </footer>;
 }
 
-export default Footer
+export default Footer;
