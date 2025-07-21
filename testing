@@ -1,0 +1,68 @@
+      <div>
+        {/* Ecommerece */}
+        <div className='border p-4'>
+          <div className="flex items-center gap-4 justify-center mb-6 text-blue-600">
+            <FaCartShopping className="text-3xl" />
+            <h3 className="text-2xl font-semibold">E-commerce</h3>
+          </div>
+          <p className="text-center">
+            Conversion-optimized stores, inventory management, and marketing
+            automation to maximize online sales.
+          </p>
+        </div>{' '}
+        {/* Local Business */}
+        <div>
+          <div>
+            <FaCartShopping />
+            <h3>Local Business</h3>
+          </div>
+          <p>
+            Local SEO, Google My Business optimization, and reputation
+            management to dominate your area.
+          </p>
+        </div>{' '}
+        {/* Coaches & Consultants */}
+        <div>
+          <div>
+            <FaCartShopping />
+            <h3>Coaches & Consultants</h3>
+          </div>
+          <p>
+            Authority building, lead generation funnels, and client management
+            systems for service providers.
+          </p>
+        </div>{' '}
+        {/* Startups */}
+        <div>
+          <div>
+            <FaCartShopping />
+            <h3>Startups</h3>
+          </div>
+          <p>
+            MVP development, growth hacking strategies, and scalable systems to
+            accelerate your launch.
+          </p>
+        </div>{' '}
+        {/* Healthcare */}
+        <div>
+          <div>
+            <FaCartShopping />
+            <h3>Healthcare</h3>
+          </div>
+          <p>
+            HIPAA-compliant websites, patient management systems, and medical
+            practice marketing.
+          </p>
+        </div>{' '}
+        {/* Influencers */}
+        <div>
+          <div>
+            <FaCartShopping />
+            <h3>Influencers</h3>
+          </div>
+          <p>
+            Personal branding, content monetization platforms, and audience
+            engagement tools to grow your influence.
+          </p>
+        </div>
+      </div>

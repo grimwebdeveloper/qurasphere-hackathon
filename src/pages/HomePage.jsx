@@ -1,5 +1,6 @@
 import Hero from '../components/home/Hero';
 import Services from '../components/home/Services';
+import ServingIndustry from '../components/home/ServingIndustry';
 import Stats from '../components/home/Stats';
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <Stats />
       <Services />
+      <ServingIndustry />
     </>
   );
 };
