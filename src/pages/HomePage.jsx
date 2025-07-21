@@ -16,7 +16,7 @@ const HomePage = () => {
       {/* <Services /> */}
       {/* <ServingIndustry /> */}
       <OurWork />
-      {/* <Testimonial /> */}
+      <Testimonial />
       <WhyChooseUs />
       <OurWorkingEthic />
       <CTA />
