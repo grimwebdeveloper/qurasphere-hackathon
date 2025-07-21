@@ -1,6 +1,7 @@
 import Heading from '../global/Heading';
 import { Tilt } from '@jdion/tilt-react';
 import { MdArrowOutward } from 'react-icons/md';
+import SpotlightCard from '../react-bits/SpotlightCard';
 
 const projectData = [
   {
@@ -65,24 +66,29 @@ const OurWork = () => {
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projectData.map((project, idx) => (
           <Tilt className="border border-zinc-300 rounded-2xl overflow-hidden">
-            <img
-              src={project.img}
-              alt={project.heading}
-              className="aspect-video w-full object-cover object-center transition-transform duration-300 hover:scale-105"
-              loading="lazy"
-            />
-            <div className="p-6 flex flex-col gap-4">
-              <h3 className="font-semibold text-2xl">{project.heading}</h3>
-              <p className="text-zinc-600 line-clamp-4">
-                {project.description}
-              </p>
-              <a
-                href="#"
-                className="flex items-center gap-2 font-semibold bg-gradient-to-r from-blue-700 to-purple-600 text-transparent bg-clip-text"
-              >
-                Visit Project <MdArrowOutward className="text-blue-600" />
-              </a>
-            </div>
+            <SpotlightCard
+              className="custom-spotlight-card"
+              spotlightColor="rgba(0, 229, 255, 0.2)"
+            >
+              <img
+                src={project.img}
+                alt={project.heading}
+                className="aspect-video w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                loading="lazy"
+              />
+              <div className="p-6 flex flex-col gap-4">
+                <h3 className="font-semibold text-2xl">{project.heading}</h3>
+                <p className="text-zinc-600 line-clamp-4">
+                  {project.description}
+                </p>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 font-semibold bg-gradient-to-r from-blue-700 to-purple-600 text-transparent bg-clip-text"
+                >
+                  Visit Project <MdArrowOutward className="text-blue-600" />
+                </a>
+              </div>
+            </SpotlightCard>
           </Tilt>
         ))}
       </div>
