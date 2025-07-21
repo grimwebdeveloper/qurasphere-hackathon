@@ -1,6 +1,7 @@
 import CTA from '../components/home/CTA';
 import Hero from '../components/home/Hero';
 import OurWork from '../components/home/OurWork';
+import OurWorkingEthic from '../components/home/OurWorkingEthic';
 import Services from '../components/home/Services';
 import ServingIndustry from '../components/home/ServingIndustry';
 import Stats from '../components/home/Stats';
@@ -13,8 +14,9 @@ const HomePage = () => {
       {/* <Stats /> */}
       {/* <Services /> */}
       {/* <ServingIndustry /> */}
-      {/* <OurWork /> */}
+      <OurWork />
       {/* <Testimonial /> */}
+      <OurWorkingEthic />
       <CTA />
     </>
   );
