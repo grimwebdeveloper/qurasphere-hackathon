@@ -6,6 +6,7 @@ import Services from '../components/home/Services';
 import ServingIndustry from '../components/home/ServingIndustry';
 import Stats from '../components/home/Stats';
 import Testimonial from '../components/home/Testimonial';
+import WhyChooseUs from '../components/home/WhyChooseUs';
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       {/* <ServingIndustry /> */}
       <OurWork />
       {/* <Testimonial /> */}
+      <WhyChooseUs />
       <OurWorkingEthic />
       <CTA />
     </>
