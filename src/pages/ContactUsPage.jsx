@@ -1,7 +1,15 @@
+import ContactBanner from '../components/contact/ContactBanner';
+import CTA from '../components/home/CTA';
+import Testimonial from '../components/home/Testimonial';
+
 const ContactUsPage = () => {
   return (
-    <div>ContactUsPage</div>
-  )
-}
+    <main>
+      <ContactBanner />
+      {/* <Testimonial />
+      <CTA /> */}
+    </main>
+  );
+};
 
-export default ContactUsPage
+export default ContactUsPage;

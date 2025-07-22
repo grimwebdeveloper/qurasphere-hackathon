@@ -5,6 +5,10 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* .banner-height {
+  min-height: calc(100vh - 80px);
+} */
+
 /* debug */
 /* *,
 *::after,
