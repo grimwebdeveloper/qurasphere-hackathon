@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import Layout from '../components/Layout';
 import ServicesPage from '../pages/ServicesPage';
@@ -11,7 +11,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 const Routing = () => {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<HomePage />} />
@@ -26,7 +26,7 @@ const Routing = () => {
             {/* Each service page */}
           </Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 };
