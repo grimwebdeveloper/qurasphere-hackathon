@@ -39,7 +39,7 @@ const Testimonial = () => {
       >
         {testimonialData.map((testimonial, idx) => (
           <SwiperSlide key={idx}>
-            <div className='border border-zinc-200 shadow-xl rounded-2xl p-4 max-w-[992px] mx-auto'>
+            <div className='border border-zinc-200 shadow-xl rounded-2xl p-4  mx-auto'>
               <BiSolidQuoteAltLeft className='text-blue-600 text-6xl' />
               <p className='text-lg text-center px-16'>
                 {testimonial.testimonial}
