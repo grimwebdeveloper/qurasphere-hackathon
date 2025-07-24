@@ -27,7 +27,7 @@ const Testimonial = () => {
     },
   ];
   return (
-    <section id='testimonial' className='max-w-screen-xl mx-auto p-4'>
+    <section id='testimonial' className='max-w-screen-xl mx-auto p-4 py-16'>
       <Heading
         title='What Our Clients Say'
         tagline="Don't just take our word for it"
