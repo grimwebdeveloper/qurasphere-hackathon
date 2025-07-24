@@ -1,18 +1,14 @@
 import Button from '../global/Button';
 
-const CTA = () => {
+const CTA = ({heading, paragraph}) => {
   return (
-    <section className=' text-white py-8 bg-gradient-to-r from-blue-600 to-purple-600'>
-      <div className='max-w-screen-xl mx-auto p-4 text-center'>
-        <h2 className='font-bold text-3xl md:text-4xl lg:text-5xl'>
-          Ready to Grow?
-          <br /> Let's Build Something Amazing Together
-        </h2>
-        <p className='my-8 text-lg md:text-xl lg:text-2xl font-medium max-w-2xl mx-auto'>
-          Join 10+ successful businesses who've transformed their online
-          presence with Qurasphere
-        </p>
-        <Button content='Contact Us' />
+    <section className='bg-gradient-to-r from-blue-600 to-blue-700 py-12'>
+      <div className='max-w-screen-xl mx-auto px-4 text-center'>
+        <h2 className='font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-3 leading-tight'>{heading}</h2>
+        <p className='my-6 text-base md:text-lg lg:text-xl font-medium max-w-2xl mx-auto text-white/90'>{paragraph}</p>
+        <div className='flex flex-col sm:flex-row gap-4 justify-center items-center mt-6'>
+          <Button content='Contact Us' className='w-full sm:w-auto' />
+        </div>
       </div>
     </section>
   );

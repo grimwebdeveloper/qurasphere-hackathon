@@ -163,8 +163,7 @@ const WebDevelopmentServicePage = () => {
               <span className='text-blue-600'> Growing Businesses</span>
             </>
           }
-          description=' Fast, responsive, SEO-ready websites built to perform and convert. From startups to enterprises, we create digital experiences that drive results. '
-          descriptionTwo='Our team specializes in scalable, secure, and maintainable web solutions—whether you need a custom app, e-commerce platform, or business website.'
+          description=' Fast, responsive, SEO-ready websites built to perform and convert. From startups to enterprises, we create digital experiences that drive results.'
         />
 
         {/* perfect for */}
@@ -261,7 +260,10 @@ const WebDevelopmentServicePage = () => {
 
         {/* CTA */}
       </main>
-      <CTA />
+      <CTA
+        heading='Ready to Build Your Dream Website?'
+        paragraph="Join 10+ successful businesses who've transformed their online presence with Qurasphere. Let's discuss your project today."
+      />
     </>
   );
 };
