@@ -9,19 +9,19 @@ const Testimonial = () => {
   const testimonialData = [
     {
       testimonial:
-        'Qurasphere delivered our project on time and exceeded our expectations. Their team was professional, communicative, and truly understood our business needs. Throughout the entire process, they kept us informed and were always available to answer our questions. The final product not only met our requirements but also included thoughtful touches that demonstrated their commitment to quality. We are thrilled with the results and look forward to working with Qurasphere again in the future.',
+        'Qurasphere delivered our project ahead of schedule and exceeded our expectations. Highly recommended!',
       clientName: 'Sarah Williams',
       clientCompany: 'Acme Corp',
     },
     {
       testimonial:
-        'The seamless process and attention to detail made working with Qurasphere a pleasure. We saw measurable improvements in our workflow and productivity. Their team took the time to understand our unique challenges and provided tailored solutions that fit perfectly with our operations. The implementation was smooth, and their ongoing support has been invaluable. Choosing Qurasphere was one of the best decisions we made for our business this year.',
+        'The team at Qurasphere was attentive, efficient, and provided excellent support throughout. Great experience!',
       clientName: 'Michael Chen',
       clientCompany: 'BrightPath Solutions',
     },
     {
       testimonial:
-        'From start to finish, Qurasphere provided expert guidance and innovative solutions. We highly recommend them to anyone looking to scale their business. Their strategic approach and technical expertise helped us overcome obstacles we had struggled with for months. The team’s dedication to our success was evident in every interaction, and the results speak for themselves. We have seen significant growth and are excited about our continued partnership with Qurasphere.',
+        'Qurasphere’s expertise helped us grow quickly. We’re very happy with the results and their dedication.',
       clientName: 'Priya Patel',
       clientCompany: 'NextGen Ventures',
     },
@@ -33,21 +33,65 @@ const Testimonial = () => {
         tagline="Don't just take our word for it"
       />
       <Swiper
-        slidesPerView={1}
+        spaceBetween={32}
+        breakpoints={{
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        }}
         modules={[Autoplay]}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        className='py-12'
       >
         {testimonialData.map((testimonial, idx) => (
           <SwiperSlide key={idx}>
-            <div className='border border-zinc-200 shadow-xl rounded-2xl p-4  mx-auto'>
-              <BiSolidQuoteAltLeft className='text-blue-600 text-6xl' />
-              <p className='text-lg text-center px-16'>
+            <div className='bg-white border border-zinc-200 rounded-2xl shadow-lg px-8 py-8 flex flex-col gap-4 max-w-xl mx-auto mb-4 min-w-full'>
+              {/* Avatar, Name, Date */}
+              <div className='flex items-center gap-4'>
+                <div className='h-12 w-12 rounded-full bg-purple-200 flex items-center justify-center overflow-hidden'>
+                  {/* Placeholder avatar: use initials */}
+                  <span className='text-xl font-bold text-purple-700'>
+                    {testimonial.clientName
+                      .split(' ')
+                      .map((n) => n[0])
+                      .join('')}
+                  </span>
+                </div>
+                <div>
+                  <div className='font-bold text-zinc-900 text-lg leading-tight'>
+                    {testimonial.clientName}
+                  </div>
+                  <div className='text-sm text-zinc-400 font-medium'>
+                    {/* Simulate a date for demo */}
+                    January 12, 2025
+                  </div>
+                </div>
+              </div>
+              {/* Stars */}
+              <div className='flex items-center gap-1 mt-1'>
+                {[...Array(4)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className='w-5 h-5 text-yellow-400'
+                    fill='currentColor'
+                    viewBox='0 0 20 20'
+                  >
+                    <polygon points='10,1.5 12.59,7.36 18.9,7.97 14,12.14 15.18,18.36 10,15.27 4.82,18.36 6,12.14 1.1,7.97 7.41,7.36' />
+                  </svg>
+                ))}
+              </div>
+              {/* Title */}
+              <div className='font-bold text-xl text-zinc-900 mt-2 mb-1'>
+                Good choice!
+              </div>
+              {/* Testimonial */}
+              <p className='text-base text-zinc-700 leading-relaxed'>
                 {testimonial.testimonial}
               </p>
-              <BiSolidQuoteAltRight className='text-blue-600 text-6xl ml-auto' />
-              <div className='text-center text-lg text-zinc-600'>
-                <span className='text-blue-600'>{testimonial.clientName}</span>{' '}
-                | {testimonial.clientCompany}
+              {/* Company */}
+              <div className='text-sm text-blue-600 font-medium mt-2'>
+                {testimonial.clientCompany}
               </div>
             </div>
           </SwiperSlide>
