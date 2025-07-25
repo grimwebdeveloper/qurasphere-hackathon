@@ -15,7 +15,10 @@ const ServicesPage = () => {
       <ServingIndustry />
       <OurWorkingEthic />
       <Testimonial />
-      <CTA />
+      <CTA 
+        heading="Ready to Transform Your Business?" 
+        paragraph="Join 30+ successful businesses who've accelerated their growth with our proven digital solutions. Your competitors are already ahead—don't wait any longer." 
+      />
     </main>
   );
 };

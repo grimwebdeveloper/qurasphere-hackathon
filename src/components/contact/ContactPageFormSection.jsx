@@ -63,13 +63,7 @@ const ContactPageFormSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would handle form submission, e.g., send data to API
-    // For now, just log the form data
-    // You may want to handle file upload separately
-    // eslint-disable-next-line no-console
     console.log(form);
-    // Optionally reset form
-    // setForm(initialState);
   };
 
   return (
