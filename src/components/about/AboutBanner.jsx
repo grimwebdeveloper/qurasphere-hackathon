@@ -17,7 +17,6 @@ const AboutBanner = () => {
         sustainable growth.
       </p>
       <div className='flex gap-4 items-center justify-center mt-6'>
-        <Button content='View Our Work' />
         <Button content='Contact Us' />
       </div>
     </section>

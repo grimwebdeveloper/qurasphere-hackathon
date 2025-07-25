@@ -1,16 +1,14 @@
 import { FaCircleCheck } from 'react-icons/fa6';
+import Heading from '../global/Heading';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
     <section className='max-w-screen-xl mx-auto px-4'>
-      <div className='text-center mb-10'>
-        <h2 className='text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-3 text-zinc-800'>
-          Our Services
-        </h2>
-        <p className='text-base sm:text-lg md:text-xl text-zinc-500 mb-8 max-w-2xl mx-auto'>
-          Everything you need to dominate your market
-        </p>
-      </div>
+      <Heading
+        title='Our Services'
+        tagline='Everything you need to dominate your market'
+      />
       <div id='services'>
         {/* SEO */}
         <div className='flex flex-col lg:flex-row items-center justify-between gap-8 py-10 border-b border-zinc-200'>
@@ -51,9 +49,9 @@ const Services = () => {
             </ul>
             <button
               type='button'
-              className='bg-gradient-to-r from-blue-700 to-purple-600 text-white py-3 px-8 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-purple-700 transition-colors duration-300'
+              className='bg-gradient-to-r from-zinc-900 to-zinc-900 text-white font-semibold px-8 py-3 rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 duration-500 transition-colors'
             >
-              Contact Us
+              <Link to='/services/seo'>Read More</Link>
             </button>
           </div>
           <div className='w-full mt-8 lg:mt-0 lg:w-[40%] hidden lg:flex justify-center'>
@@ -102,9 +100,9 @@ const Services = () => {
             </ul>
             <button
               type='button'
-              className='bg-gradient-to-r from-blue-700 to-purple-600 text-white py-3 px-8 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-purple-700 transition-colors duration-300'
+              className='bg-gradient-to-r from-zinc-900 to-zinc-900 text-white font-semibold px-8 py-3 rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 duration-500 transition-colors'
             >
-              Contact Us
+              <Link to='/services/webdesign'>Read More</Link>
             </button>
           </div>
           <div className='w-full mb-8 lg:mb-0 lg:w-[40%] hidden lg:flex justify-center'>
@@ -153,9 +151,9 @@ const Services = () => {
             </ul>
             <button
               type='button'
-              className='bg-gradient-to-r from-blue-700 to-purple-600 text-white py-3 px-8 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-purple-700 transition-colors duration-300'
+              className='bg-gradient-to-r from-zinc-900 to-zinc-900 text-white font-semibold px-8 py-3 rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 duration-500 transition-colors'
             >
-              Contact Us
+              <Link to='/services/webdevelopment'>Read More</Link>
             </button>
           </div>
           <div className='w-full mt-8 lg:mt-0 lg:w-[40%] hidden lg:flex justify-center'>
@@ -205,9 +203,9 @@ const Services = () => {
             </ul>
             <button
               type='button'
-              className='bg-gradient-to-r from-blue-700 to-purple-600 text-white py-3 px-8 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-purple-700 transition-colors duration-300'
+              className='bg-gradient-to-r from-zinc-900 to-zinc-900 text-white font-semibold px-8 py-3 rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 duration-500 transition-colors'
             >
-              Contact Us
+              <Link to='/services/websitemaintenance'>Read More</Link>
             </button>
           </div>
           <div className='w-full mt-8 lg:mt-0 lg:w-[40%] hidden lg:flex justify-center'>

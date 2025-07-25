@@ -78,9 +78,9 @@ const WhatWeDoForYou = () => {
           </div>
         ))}
       </div>
-      <div className='text-center mt-8'>
+      {/* <div className='text-center mt-8'>
         <Button content='View All Services' />
-      </div>
+      </div> */}
     </section>
   );
 };

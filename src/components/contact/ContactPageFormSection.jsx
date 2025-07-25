@@ -243,7 +243,7 @@ const ContactPageFormSection = () => {
 
       <button
         type='submit'
-        className='mt-2 w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow'
+        className='bg-gradient-to-r from-zinc-900 to-zinc-900 text-white font-semibold px-8 py-3 rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 duration-500 transition-colors mt-2 w-full shadow'
       >
         Submit
       </button>

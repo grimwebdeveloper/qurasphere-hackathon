@@ -28,14 +28,14 @@ const Hero = () => {
             Web, SEO & Full-Stack Digital Growth for Ambitious Brands
           </p>
           <ul className="mt-6 flex justify-center lg:justify-start gap-4">
-            <li>
+            {/* <li>
               <button
                 type="button"
                 className="px-8 py-3 font-semibold rounded-full bg-black text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 duration-500 transition-colors"
               >
                 <a href="#our-work">View Our Work</a>
               </button>
-            </li>
+            </li> */}
             <li>
               <button
                 type="button"

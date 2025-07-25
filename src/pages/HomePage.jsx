@@ -19,7 +19,10 @@ const HomePage = () => {
       <Testimonial />
       <WhyChooseUs />
       <OurWorkingEthic />
-      <CTA />
+      <CTA
+        heading="Ready to Grow? Let's Build Something Amazing Together."
+        paragraph="Join 10+ successful businesses who've transformed their online presence with Qurasphere"
+      />
     </>
   );
 };

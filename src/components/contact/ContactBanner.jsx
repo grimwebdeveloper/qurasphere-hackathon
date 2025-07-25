@@ -13,8 +13,8 @@ const ContactBanner = () => {
       </p>
       <p className='text-lg lg:text-xl'>
         Prefer email? Reach us directly at{' '}
-        <a href='mailto:hello@mushanexa.com' className='text-blue-600'>
-          hello@qurasphere.com
+        <a href='mailto:qurasphere@gmail.com' className='text-blue-600'>
+          qurasphere@gmail.com
         </a>
       </p>
     </section>

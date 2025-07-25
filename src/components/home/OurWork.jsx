@@ -1,7 +1,5 @@
 import Heading from '../global/Heading';
-import { Tilt } from '@jdion/tilt-react';
 import { MdArrowOutward } from 'react-icons/md';
-import SpotlightCard from '../react-bits/SpotlightCard';
 
 const projectData = [
   {
@@ -56,7 +54,7 @@ const projectData = [
 
 const OurWork = () => {
   return (
-    <section id="our-work" className="max-w-screen-xl mx-auto px-4">
+    <section id="our-work" className="max-w-screen-xl mx-auto px-4 py-16">
       {/* Heading */}
       <Heading
         title="Our Work"
@@ -65,11 +63,7 @@ const OurWork = () => {
       {/* Projects */}
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projectData.map((project, idx) => (
-          <Tilt className="border border-zinc-300 rounded-2xl overflow-hidden">
-            <SpotlightCard
-              className="custom-spotlight-card"
-              spotlightColor="rgba(0, 229, 255, 0.2)"
-            >
+          <div className="border border-zinc-300 rounded-2xl overflow-hidden">
               <img
                 src={project.img}
                 alt={project.heading}
@@ -88,8 +82,7 @@ const OurWork = () => {
                   Visit Project <MdArrowOutward className="text-blue-600" />
                 </a>
               </div>
-            </SpotlightCard>
-          </Tilt>
+          </div>
         ))}
       </div>
     </section>

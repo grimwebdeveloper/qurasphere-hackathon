@@ -9,7 +9,7 @@ const ContactPageForm = () => {
       <ContactPageFormSection />
       <div id='other-ways' className='flex flex-col gap-8 lg:col-span-1'>
         <Otherways />
-        <ContactSocials />
+        {/* <ContactSocials /> */}
         <Response />
       </div>
     </section>
