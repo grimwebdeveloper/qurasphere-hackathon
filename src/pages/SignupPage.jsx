@@ -4,11 +4,10 @@ import Button from '../components/global/Button';
 
 const projectTypes = [
   '',
-  'Web Development',
   'SEO',
-  'Branding',
-  'E-commerce',
-  'App Development',
+  'Web Development',
+  'Web Design',
+  'Website Maintenance',
   'Other',
 ];
 
